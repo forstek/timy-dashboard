@@ -9,8 +9,15 @@ const Input = styled.input`
     border-radius: 24px;
     box-sizing: border-box;
 
-    font-size: 16px;
-    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+        /* identical to box height, or 222% */
+    display: flex;
+    align-items: center;
+
     padding: 20px;
 
     :focus {

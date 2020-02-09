@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import logo from 'assets/images/timy-logo.png';
-import Input from 'components/Input';
+import React, { Component } from 'react'
+import Input from 'components/Input'
 
 class Register extends Component {
-	render() {
-		return (
-			<Input 
-				placeholder="Email"
-			/>
-		);
-	}
+  render () {
+    return (
+      <Input
+		placeholder='Email'
+		type='password'
+      />
+    )
+  }
 }
 
-export default Register;
+export default Register

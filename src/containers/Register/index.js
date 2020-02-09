@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Button from 'components/Button';
 
 class Register extends Component {
 	render() {
 		return (
 			<div className="Register">
-				<h1>Timy Dashboard</h1>
+				<Button>
+					Sign up
+				</Button>
 			</div>
 		);
 	}

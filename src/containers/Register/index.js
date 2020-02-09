@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
-import Input from 'components/Input'
+import React, { Component } from 'react';
 
 class Register extends Component {
   render () {
     return (
-      <Input
-		placeholder='Email'
-		type='password'
-      />
+      <h1>Timy Dashboard</h1>
     )
   }
 }

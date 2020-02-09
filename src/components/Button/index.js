@@ -1,26 +1,25 @@
-import styled from 'styled-components';
+import React, {Component} from 'react';
+import Styled from './StyledComponent';
 
-const Button = styled.button`
-    width: 295px;
-    height: 60px;
+export default class Button extends Component {
+    render () {
+        const {
+            background,
+            color,
+            src,
+            text
+        } = this.props;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 40px;
-    /* or 167% */
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    background: #FC6F20;
-    border-radius: 32px;
-
-    :focus {
-        outline: none;
-    }
-`;
-
-export default Button;
+        return (
+            <Styled.Button
+                background = { background }
+                color = { color }
+            >   
+                <Styled.Icon
+                    src = { src }
+                />
+                { text }
+            </Styled.Button>
+        )
+    }    
+}

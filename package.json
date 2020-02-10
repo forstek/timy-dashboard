@@ -42,7 +42,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}, !(src/serviceWorker.js)": [
+    "src/**/*.{js,jsx,json,css}": [
         "npx standard --fix"
     ]
   },

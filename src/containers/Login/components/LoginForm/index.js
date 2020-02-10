@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Styled from './StyledComponent'
 
 import Input from 'components/Input'
@@ -41,16 +42,16 @@ export default class Form extends Component {
             background='#FFFFFF'
             color='#707070'
           />
-          <a
-            href='/'
+          <Link
+            to='/'
           >
                         Forgot password?
-          </a>
-          <a
-            href='/'
+          </Link>
+          <Link
+            to='/register'
           >
                         Don't have an account?
-          </a>
+          </Link>
         </Styled.FormFooter>
       </Styled.Form>
     )

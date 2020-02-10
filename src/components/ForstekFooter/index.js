@@ -20,7 +20,7 @@ export default class ForstekFooter extends Component {
         </Styled.Heart>
                 &nbsp; by &nbsp;
         <Styled.Forstek>
-                    Forstek
+              Forstek
         </Styled.Forstek>
       </Styled.ForstekFooter>
     )

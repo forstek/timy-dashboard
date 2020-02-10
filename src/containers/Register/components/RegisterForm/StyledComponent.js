@@ -45,7 +45,7 @@ const FormFooter = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 24px;
 
     justify-items: center;
 

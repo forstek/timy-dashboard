@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Styled from './StyledComponent'
 
 import Input from 'components/Input'
@@ -42,11 +43,11 @@ export default class Form extends Component {
           <Button
             text='Sign up'
           />
-          <a
-            href='/'
+          <Link
+            to='/login'
           >
                         Already have an account?
-          </a>
+          </Link>
         </Styled.FormFooter>
       </Styled.Form>
     )

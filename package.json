@@ -38,13 +38,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npx standard --fix"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-        "npx standard --fix"
-    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -70,7 +65,6 @@
   "devDependencies": {
     "cypress": "^3.8.3",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
     "standard": "^14.3.1"
   }
 }

@@ -42,11 +42,9 @@
     }
   },
   "lint-staged": {
-    "linters" : {
-      "src/**/*.{js,jsx,json,css}, !(src/serviceWorker.js)": [
+    "src/**/*.{js,jsx,json,css}, !(src/serviceWorker.js)": [
         "npx standard --fix"
-      ]
-    }
+    ]
   },
   "scripts": {
     "start": "react-scripts start",

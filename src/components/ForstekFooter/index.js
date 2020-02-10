@@ -19,9 +19,13 @@ export default class ForstekFooter extends Component {
           </svg>
         </Styled.Heart>
                 &nbsp; by &nbsp;
-        <Styled.Forstek>
+        <a
+          href='https://www.forstek.co/'
+        >
+          <Styled.Forstek>
               Forstek
-        </Styled.Forstek>
+          </Styled.Forstek>
+        </a>
       </Styled.ForstekFooter>
     )
   }

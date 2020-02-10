@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import {
-    Route,
-    BrowserRouter as Router
+  Route,
+  BrowserRouter as Router
 } from 'react-router-dom'
 
 import './styles/index.css'
@@ -14,13 +14,13 @@ import Register from 'containers/Register'
 import * as serviceWorker from './serviceWorker'
 
 const routing = (
-    <Router>
-        <div>
-            <Route exact path="/" component={Login} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-        </div>
-    </Router>
+  <Router>
+    <div>
+      <Route exact path='/' component={Login} />
+      <Route path='/login' component={Login} />
+      <Route path='/register' component={Register} />
+    </div>
+  </Router>
 )
 
 ReactDOM.render(routing, document.getElementById('root'))

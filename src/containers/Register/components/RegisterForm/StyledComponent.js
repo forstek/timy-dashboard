@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-const Form = styled.div `
+const Form = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-`;
+`
 
 const FormHeader = styled.div`
     display: grid;
@@ -22,7 +22,7 @@ const FormHeader = styled.div`
     text-align: center;
 
     color: #807777;
-`;
+`
 
 const FormBody = styled.form`
     display: grid;
@@ -33,7 +33,7 @@ const FormBody = styled.form`
     margin: 10px 0px 30px 0px;
 
     justify-items: center;
-`;
+`
 
 const FormFooter = styled.div`
     display: grid;
@@ -52,11 +52,11 @@ const FormFooter = styled.div`
     a {
         color: #807777;
     }
-`;
+`
 
 export default {
-    Form,
-    FormHeader,
-    FormBody,
-    FormFooter
+  Form,
+  FormHeader,
+  FormBody,
+  FormFooter
 }

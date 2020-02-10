@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-const Forstek = styled.p `
+const Forstek = styled.p`
     color: #FC6F20 !important;
 
     display: inline-block;
@@ -8,7 +8,7 @@ const Forstek = styled.p `
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-`;
+`
 
 const ForstekFooter = styled.p`
     width: 153px;
@@ -30,7 +30,7 @@ const ForstekFooter = styled.p`
     text-align: center;
 
     color: #807777;
-`;
+`
 
 const Heart = styled.div`
     fill: red;
@@ -45,10 +45,10 @@ const Heart = styled.div`
         50% { transform: scale(1.3); }
         100% { transform: scale(1); }
     }
-`;
+`
 
 export default {
-    Forstek,
-    ForstekFooter,
-    Heart
+  Forstek,
+  ForstekFooter,
+  Heart
 }

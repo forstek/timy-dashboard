@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
+import Form from './components/RegisterForm'
+import ForstekFooter from 'components/ForstekFooter'
 
 class Register extends Component {
   render () {
     return (
-		<h1>Timy Dashboard</h1>
+      <div>
+        <Form />
+        <ForstekFooter />
+      </div>
     )
   }
 }

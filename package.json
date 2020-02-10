@@ -38,11 +38,17 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters" : {
+      "src/**/*.{js,jsx,json,css}, !(src/serviceWorker.js)": [
+        "npx standard --fix"
+      ]
     }
   },
   "scripts": {
-    "lint": "npx standard --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

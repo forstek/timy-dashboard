@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Styled from './StyledComponent'
-import TimyLogo from 'assets/images/timy-logo.png'
+
 import Input from 'components/Input'
 import Button from 'components/Button'
+
+import TimyLogo from 'assets/images/timy-logo.png'
 
 export default class Form extends Component {
   render () {

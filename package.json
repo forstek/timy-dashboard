@@ -36,9 +36,13 @@
     "reselect": "^4.0.0",
     "styled-components": "^5.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "scripts": {
     "lint": "npx standard --fix",
-    "pre-commit": "npm run lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

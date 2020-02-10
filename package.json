@@ -38,7 +38,7 @@
   },
   "scripts": {
     "lint": "npx standard --fix",
-    "precommit": "npm run lint",
+    "pre-commit": "npm run lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

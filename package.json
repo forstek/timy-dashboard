@@ -45,6 +45,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx standard --fix"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -59,6 +64,7 @@
   },
   "devDependencies": {
     "cypress": "^3.8.3",
+    "husky": "^4.2.1",
     "standard": "^14.3.1"
   }
 }

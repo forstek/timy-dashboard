@@ -37,6 +37,8 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
+    "lint": "npx standard --fix",
+    "precommit": "npm run lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,16 +46,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./src/*.{js,jsx,css}": [
-      "npx standard --fix"
-    ]
   },
   "browserslist": {
     "production": [

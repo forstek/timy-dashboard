@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
-import Register from 'containers/Register'
+import Login from 'containers/Login'
 import * as serviceWorker from './serviceWorker'
 
-ReactDOM.render(<Register />, document.getElementById('root'))
+ReactDOM.render(<Login />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

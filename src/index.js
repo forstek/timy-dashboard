@@ -10,6 +10,7 @@ import './styles/index.css'
 
 import Login from 'containers/Login'
 import Register from 'containers/Register'
+import Homepage from 'containers/Homepage'
 
 import * as serviceWorker from './serviceWorker'
 
@@ -19,6 +20,7 @@ const routing = (
       <Route exact path='/' component={Login} />
       <Route path='/login' component={Login} />
       <Route path='/register' component={Register} />
+      <Route path='/home' component={Homepage} />
     </div>
   </Router>
 )

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Toolbar = styled.div`
     position: fixed;
+    z-index:1;
 
     height: 60px;
     width: 100%;

@@ -10,14 +10,14 @@ const Input = (props) => {
     label,
     placeholder
   } = props
-  
+
   return (
-    <Styled.Input 
-        type={type}
-        name={name}
-        value={value}
-        label={label}
-        placeholder={placeholder}
+    <Styled.Input
+      type={type}
+      name={name}
+      value={value}
+      label={label}
+      placeholder={placeholder}
     />
   )
 }

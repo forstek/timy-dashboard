@@ -1,34 +1,44 @@
 import styled from 'styled-components'
 
 const Sidenav = styled.div`
-    position: absolute;
-    height: auto;
+    position: fixed;
+    height: 100vh;
     width: 320px;
     left: 0px;
     top: 60px;
+    bottom: 0;
 
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 `
 
 const Navmenu = styled.a`
     background: #F8F8F8;
     box-shadow: 0px 1px 0px #E0D7D7;
-    display: block;
+    border-bottom: 1px solid #E0D7D7;
     padding: 24px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 16px;
 
     color: #000000;
+
+    :last-child {
+        flex-grow: 1;
+    }
 
     :hover {
         background: #CCCCCC
     }
 
     :active {
-        background:  #FFC3A2;
+        background:  #FFC3A2
     }
 `
 

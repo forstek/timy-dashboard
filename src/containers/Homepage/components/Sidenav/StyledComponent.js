@@ -4,16 +4,14 @@ const Sidenav = styled.div`
     position: fixed;
     height: 100vh;
     width: 320px;
-    left: 0px;
+    left: 0;
     top: 60px;
     bottom: 0;
 
+    background: #F8F8F8;
     z-index: 1;
     overflow-x: hidden;
     overflow-y: auto;
-
-    display: flex;
-    flex-direction: column;
 `
 
 const Navmenu = styled.a`
@@ -21,6 +19,7 @@ const Navmenu = styled.a`
     box-shadow: 0px 1px 0px #E0D7D7;
     border-bottom: 1px solid #E0D7D7;
     padding: 24px;
+    display: block;
 
     font-family: Roboto;
     font-style: normal;
@@ -28,10 +27,6 @@ const Navmenu = styled.a`
     font-size: 16px;
 
     color: #000000;
-
-    :last-child {
-        flex-grow: 1;
-    }
 
     :hover {
         background: #CCCCCC

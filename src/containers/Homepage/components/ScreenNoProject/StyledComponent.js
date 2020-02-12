@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const screen = styled.div`
-    position: absolute;
+    position: fixed;
 
     width: 100%;
     left: 50%;

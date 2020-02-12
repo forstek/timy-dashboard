@@ -9,11 +9,11 @@ export default class Sidenav extends PureComponent {
 
     return (
       <Styled.Sidenav>
-        { projects.map( ({ 
-            label, 
-            name 
+        {projects.map(({
+          label,
+          name
         }) => (
-          <Styled.Navmenu key={ name }> { label } </Styled.Navmenu>
+          <Styled.Navmenu key={name}> {label} </Styled.Navmenu>
         ))}
       </Styled.Sidenav>
     )

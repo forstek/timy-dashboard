@@ -7,7 +7,7 @@ const Sidenav = styled.div`
     left: 0px;
     top: 60px;
 
-`;
+`
 
 const Navmenu = styled.a`
     background: #F8F8F8;
@@ -30,9 +30,9 @@ const Navmenu = styled.a`
     :active {
         background:  #FFC3A2;
     }
-`;
+`
 
 export default {
-    Sidenav,
-    Navmenu
+  Sidenav,
+  Navmenu
 }

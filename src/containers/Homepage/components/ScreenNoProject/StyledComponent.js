@@ -12,7 +12,7 @@ const screen = styled.div`
     margin-top: 80px;
 
     text-align: center;
-`;
+`
 
 const welcomeText1 = styled.p`
     font-family: Roboto;
@@ -23,12 +23,12 @@ const welcomeText1 = styled.p`
     /* or 125% */
 
     color: #000000;
-`;
+`
 
 const emoji = styled.img`
     margin-top: 40px;
     margin-bottom: 14px;
-`;
+`
 
 const welcomeText2 = styled.p`
     font-family: Roboto;
@@ -42,7 +42,7 @@ const welcomeText2 = styled.p`
     margin-bottom: 42px;
 
     color: #000000;
-`;
+`
 
 const Button = styled.button`
     background: #FC6F20;
@@ -63,12 +63,12 @@ const Button = styled.button`
     :focus {
         outline: none;
     }
-`;
+`
 
 export default {
-    screen,
-    welcomeText1,
-    emoji,
-    welcomeText2,
-    Button
+  screen,
+  welcomeText1,
+  emoji,
+  welcomeText2,
+  Button
 }

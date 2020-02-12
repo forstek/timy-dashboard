@@ -10,6 +10,14 @@ import UserIcon from 'assets/images/user-icon.png'
 
 class Homepage extends PureComponent {
   render () {
+
+    const projects = [
+      { name: 'project1', label: 'Project 1' },
+      { name: 'project2', label: 'Project 2' },
+      { name: 'project3', label: 'Project 3' },
+      { name: 'project4', label: 'Project 4' },
+    ]
+
     return (
       <div>
         <Toolbar
@@ -17,7 +25,7 @@ class Homepage extends PureComponent {
           buttonImg={AddIcon}
           profileImg={UserIcon}
         />
-        <Sidenav />
+        <Sidenav projects={projects} />
         <ScreenNoProject />
       </div>
     )

@@ -1,28 +1,25 @@
-import styled from 'styled-components'
+import React from 'react'
+import { pure } from 'recompose'
+import Styled from './StyledComponent'
 
-const Input = styled.input`
-    width: 295px;
-    height: 48px;
+const Input = (props) => {
+  const {
+    type,
+    name,
+    value,
+    label,
+    placeholder
+  } = props
+  
+  return (
+    <Styled.Input 
+        type={type}
+        name={name}
+        value={value}
+        label={label}
+        placeholder={placeholder}
+    />
+  )
+}
 
-    background: #FFFFFF;
-    border: 1px solid #FC6F20;
-    border-radius: 24px;
-    box-sizing: border-box;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 40px;
-    /* identical to box height, or 222% */
-    display: flex;
-    align-items: center;
-
-    padding: 20px;
-
-    :focus {
-        outline: none;
-    }
-`
-
-export default Input
+export default pure(Input)

@@ -4,6 +4,9 @@ import Styled from './StyledComponent'
 
 const Button = (props) => {
   const {
+    type,
+    name,
+    value,
     background,
     color,
     src,
@@ -12,6 +15,9 @@ const Button = (props) => {
 
   return (
     <Styled.Button
+      type={type}
+      name={name}
+      value={value}
       background={background}
       color={color}
     >

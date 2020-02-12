@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 import Styled from './StyledComponent'
 
@@ -7,7 +7,7 @@ import Button from 'components/Button'
 
 import TimyLogo from 'assets/images/timy-logo.png'
 
-export default class Form extends Component {
+export default class Form extends PureComponent {
   render () {
     return (
       <Styled.Form>

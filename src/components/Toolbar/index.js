@@ -32,9 +32,9 @@ const Toolbar = (props) => {
       <Styled.Profile
         onClick={handleProfile}
       >
-          <Styled.ButtonIcon
-            src={profileImg}
-          />
+        <Styled.ButtonIcon
+          src={profileImg}
+        />
       </Styled.Profile>
     </Styled.Toolbar>
   )

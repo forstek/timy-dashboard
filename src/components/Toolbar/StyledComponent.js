@@ -9,7 +9,7 @@ const Toolbar = styled.div`
     top: 0px;
 
     background: #FC6F20;
-`;
+`
 
 const Logo = styled.img`  
     position: fixed;
@@ -17,7 +17,7 @@ const Logo = styled.img`
     height: 36px;
     left: 25px;
     top: 12px;
-`;
+`
 
 const Add = styled.button`
     position: fixed;
@@ -41,12 +41,12 @@ const Add = styled.button`
         box-shadow: 0 0 2px 0 #00823F;
         top: 9px;
     }
-`;
+`
 
 const ButtonIcon = styled.img`
     width: 20px;
     height: 20px;
-`;
+`
 
 const Profile = styled.button`
     position: fixed;
@@ -69,12 +69,12 @@ const Profile = styled.button`
         box-shadow: 0 0 2px 0 #00823F;
         top: 9px;
     }
-`;
+`
 
-export default { 
-    Toolbar,
-    Logo,
-    Add,
-    Profile,
-    ButtonIcon,
+export default {
+  Toolbar,
+  Logo,
+  Add,
+  Profile,
+  ButtonIcon
 }

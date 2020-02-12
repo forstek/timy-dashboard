@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Toolbar from 'components/Toolbar'
 
-import TimyLogo from'assets/images/timy-logo-white.png'
+import TimyLogo from 'assets/images/timy-logo-white.png'
 import AddIcon from 'assets/images/add-icon-white.png'
 import UserIcon from 'assets/images/user-icon.png'
 

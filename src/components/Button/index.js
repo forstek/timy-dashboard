@@ -1,25 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { pure } from 'recompose'
 import Styled from './StyledComponent'
 
-export default class Button extends Component {
-  render () {
-    const {
-      background,
-      color,
-      src,
-      text
-    } = this.props
+const Button = (props) => {
+  const {
+    background,
+    color,
+    src,
+    text
+  } = props
 
-    return (
-      <Styled.Button
-        background={background}
-        color={color}
-      >
-        <Styled.Icon
-          src={src}
-        />
-        {text}
-      </Styled.Button>
-    )
-  }
+  return (
+    <Styled.Button
+      background={background}
+      color={color}
+    >
+      <Styled.Icon
+        src={src}
+      />
+      {text}
+    </Styled.Button>
+  )
 }
+
+export default pure(Button)

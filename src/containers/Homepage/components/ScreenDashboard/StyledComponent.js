@@ -10,6 +10,8 @@ const ScreenDashboardGrid = styled.div`
         'member-list category-list';
     grid-gap: 3px;
     padding: 20px 50px 25px;
+    margin-top: 60px;
+    margin-left: 320px;
 `
 
 const Menu = styled.p`
@@ -52,7 +54,7 @@ const Chart = styled.div`
 
 const Members = styled.p`
     grid-area: members;
-    margin-top: 50px;
+    margin-top: 80px;
 
     font-family: Roboto;
     font-style: normal;
@@ -66,7 +68,7 @@ const Members = styled.p`
 
 const Categories = styled.p`
     grid-area: categories;
-    margin-top: 50px;
+    margin-top: 80px;
 
     font-family: Roboto;
     font-style: normal;
@@ -168,6 +170,39 @@ const DeleteIcon = styled.img`
     height: 6px;
 `
 
+const Tooltip = styled.div`
+    position: relative;
+    display: inline-block;
+
+    span {
+        visibility: hidden;
+        hight: 27px;
+        width: 155px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -20px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    :hover span {
+        visibility: visible;
+    }
+`
+
 export default {
   ScreenDashboardGrid,
   Menu,
@@ -180,5 +215,6 @@ export default {
   Add,
   AddIcon,
   Delete,
-  DeleteIcon
+  DeleteIcon,
+  Tooltip
 }

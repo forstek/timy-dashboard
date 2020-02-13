@@ -16,56 +16,62 @@ export default class ScreenDashboard extends PureComponent {
     } = this.props
 
     return (
-      <Styled.ScreenDashboardGrid>
-        <Styled.Menu>
-          <a href='/home'>Dashboard</a>
-          <a href='/home'>Settings</a>
-        </Styled.Menu>
-        <Styled.Title>
-          {projectTitle} - Dashboard
-        </Styled.Title>
-        <Styled.Chart />
-        <Styled.Members>
-                Members
-          <Styled.Add
-            onClick={onMembersAdd}
-          >
-            <Styled.AddIcon
-              src={AddIcon}
-            />
-          </Styled.Add>
-        </Styled.Members>
-        <Styled.Categories>
-                Categories
-          <Styled.Add
-            onClick={onCategoriesAdd}
-          >
-            <Styled.AddIcon
-              src={AddIcon}
-            />
-          </Styled.Add>
-        </Styled.Categories>
-        <div>
-          {members.map(({
-            label,
-            name
-          }) => (
-            <Styled.MemberList key={name}>
-              {label}
-            </Styled.MemberList>
-          ))}
-        </div>
-        <div>
-          {categories.map(({
-            label,
-            name
-          }) => (
-            <Styled.CategoryList key={name}>
-              {label}
-            </Styled.CategoryList>
-          ))}
-        </div>
-      </Styled.ScreenDashboardGrid>
+        <Styled.ScreenDashboardGrid>
+          <Styled.Menu>
+            <a href='/home'>Dashboard</a>
+            <a href='/home'>Settings</a>
+          </Styled.Menu>
+          <Styled.Title>
+            {projectTitle} - Dashboard
+          </Styled.Title>
+          <Styled.Chart />
+          <Styled.Members>
+                  Members
+            <Styled.Tooltip>
+              <span>Add new member</span>
+              <Styled.Add
+                onClick={onMembersAdd}
+              >
+                <Styled.AddIcon
+                  src={AddIcon}
+                />
+              </Styled.Add>
+            </Styled.Tooltip>
+          </Styled.Members>
+          <Styled.Categories>
+                  Categories
+            <Styled.Tooltip>
+              <span>Add new category</span>
+              <Styled.Add
+                onClick={onCategoriesAdd}
+              >
+                <Styled.AddIcon
+                  src={AddIcon}
+                />
+              </Styled.Add>
+            </Styled.Tooltip>
+          </Styled.Categories>
+          <div>
+            {members.map(({
+              label,
+              name
+            }) => (
+              <Styled.MemberList key={name}>
+                {label}
+              </Styled.MemberList>
+            ))}
+          </div>
+          <div>
+            {categories.map(({
+              label,
+              name
+            }) => (
+              <Styled.CategoryList key={name}>
+                {label}
+              </Styled.CategoryList>
+            ))}
+          </div>
+        </Styled.ScreenDashboardGrid>
     )
   }
 }

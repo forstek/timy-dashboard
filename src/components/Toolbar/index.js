@@ -22,13 +22,16 @@ const Toolbar = (props) => {
           src={logo}
         />
       </Link>
-      <Styled.Add
-        onClick={handleAdd}
-      >
-        <Styled.ButtonIcon
-          src={buttonImg}
-        />
-      </Styled.Add>
+      <Styled.Tooltip>
+        <span>Create new project</span>
+        <Styled.Add
+          onClick={handleAdd}
+        >
+          <Styled.ButtonIcon
+            src={buttonImg}
+          />
+        </Styled.Add>
+      </Styled.Tooltip>
       <Styled.Profile
         onClick={handleProfile}
       >

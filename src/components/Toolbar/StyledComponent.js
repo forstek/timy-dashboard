@@ -72,10 +72,42 @@ const Profile = styled.button`
     }
 `
 
+const Tooltip = styled.div`
+    position: relative;
+    display: inline-block;
+
+    span {
+        visibility: hidden;
+        width: 155px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        right: 120px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    :hover span {
+        visibility: visible;
+    }
+`
+
 export default {
   Toolbar,
   Logo,
   Add,
   Profile,
-  ButtonIcon
+  ButtonIcon,
+  Tooltip
 }

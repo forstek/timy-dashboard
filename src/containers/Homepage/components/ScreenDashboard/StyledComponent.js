@@ -176,7 +176,6 @@ const Tooltip = styled.div`
 
     span {
         visibility: hidden;
-        hight: 27px;
         width: 155px;
         background-color: black;
         color: #fff;

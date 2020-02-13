@@ -36,8 +36,8 @@ class Homepage extends PureComponent {
           profileImg={UserIcon}
         />
         <Sidenav
-          gridArea='sidenav' 
-          projects={PROJECTS} 
+          gridArea='sidenav'
+          projects={PROJECTS}
         />
         <ScreenDashboard
           projectTitle='Project 4'

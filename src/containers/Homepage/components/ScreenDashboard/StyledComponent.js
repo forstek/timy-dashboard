@@ -52,7 +52,7 @@ const Chart = styled.div`
     background: #F0F0F0;
 `
 
-const Members = styled.p`
+const Members = styled.div`
     grid-area: members;
     margin-top: 80px;
 
@@ -66,7 +66,7 @@ const Members = styled.p`
     color: #000000;
 `
 
-const Categories = styled.p`
+const Categories = styled.div`
     grid-area: categories;
     margin-top: 80px;
 

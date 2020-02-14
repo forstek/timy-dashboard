@@ -19,7 +19,7 @@ export default class ScreenDashboard extends PureComponent {
       <Styled.ScreenDashboardGrid>
         <Styled.Menu>
           <a href='/home'>Dashboard</a>
-          <a href='/home'>Settings</a>
+          <a href='/settings'>Settings</a>
         </Styled.Menu>
         <Styled.Title>
           {projectTitle} - Dashboard

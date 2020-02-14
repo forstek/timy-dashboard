@@ -1,14 +1,13 @@
 import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
 import Sidenav from './components/Sidenav'
-// import ScreenNoProject from './components/ScreenNoProject'
-import ScreenDashboard from './components/ScreenDashboard'
+import ScreenSettings from './components/ScreenSettings'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
 import AddIcon from 'assets/images/add-icon-white.png'
 import UserIcon from 'assets/images/user-icon.png'
 
-class Homepage extends PureComponent {
+class ProjectSettings extends PureComponent {
   render () {
     const PROJECTS = [
       { name: 'project1', label: 'Project 1' },
@@ -17,14 +16,9 @@ class Homepage extends PureComponent {
       { name: 'project4', label: 'Project 4' }
     ]
 
-    const MEMBERS = [
+    const PROJECT_ADMINS = [
       { name: 'Iqbal Novramadani', label: 'Iqbal Novramadani' },
       { name: 'Angga Pratama Putra', label: 'Angga Pratama Putra' }
-    ]
-
-    const CATEGORIES = [
-      { name: 'Apps development', label: 'Apps development' },
-      { name: 'Web development', label: 'Web development' }
     ]
 
     return (
@@ -37,14 +31,14 @@ class Homepage extends PureComponent {
         <Sidenav
           projects={PROJECTS}
         />
-        <ScreenDashboard
-          projectTitle='Project 4'
-          members={MEMBERS}
-          categories={CATEGORIES}
+        <ScreenSettings
+          projectName='Project 4'
+          projectOwner='Iqbal Novramadani'
+          projectAdmins={PROJECT_ADMINS}
         />
       </div>
     )
   }
 }
 
-export default Homepage
+export default ProjectSettings

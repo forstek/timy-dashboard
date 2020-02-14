@@ -13,6 +13,7 @@ import Register from 'containers/Register'
 import Homepage from 'containers/Homepage'
 import ProjectSettings from 'containers/ProjectSettings'
 import HoursDaily from 'containers/HoursDaily'
+import HoursWeekly from 'containers/HoursWeekly'
 
 import * as serviceWorker from './serviceWorker'
 
@@ -25,6 +26,7 @@ const routing = (
       <Route path='/home' component={Homepage} />
       <Route path='/settings' component={ProjectSettings} />
       <Route path='/daily' component={HoursDaily} />
+      <Route path='/weekly' component={HoursWeekly} />
     </div>
   </Router>
 )

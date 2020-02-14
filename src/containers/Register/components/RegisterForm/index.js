@@ -4,6 +4,7 @@ import Styled from './StyledComponent'
 
 import Input from 'components/Input'
 import Button from 'components/Button'
+import ForstekFooter from 'components/ForstekFooter'
 
 import TimyLogo from 'assets/images/timy-logo.png'
 
@@ -49,6 +50,7 @@ export default class Form extends PureComponent {
                         Already have an account?
           </Link>
         </Styled.FormFooter>
+        <ForstekFooter />
       </Styled.Form>
     )
   }

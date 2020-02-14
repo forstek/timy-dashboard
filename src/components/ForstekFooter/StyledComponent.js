@@ -10,13 +10,13 @@ const Forstek = styled.p`
     font-weight: normal;
 `
 
-const ForstekFooter = styled.p`
+const ForstekFooter = styled.div`
     width: 153px;
     height: 14px;
 
     position: fixed;
-    bottom: 15%;
     left:50%;
+    margin-top:30px;
     transform: translate(-50%, -50%);
 
     font-family: Roboto;

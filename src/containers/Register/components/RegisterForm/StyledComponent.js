@@ -9,8 +9,6 @@ const Form = styled.div`
 
 const FormHeader = styled.div`
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
 
     justify-items: center;
 
@@ -26,8 +24,6 @@ const FormHeader = styled.div`
 
 const FormBody = styled.form`
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
     grid-row-gap: 16px;
 
     margin: 10px 0px 30px 0px;
@@ -37,8 +33,6 @@ const FormBody = styled.form`
 
 const FormFooter = styled.div`
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
     grid-row-gap: 24px;
 
     font-family: Roboto;

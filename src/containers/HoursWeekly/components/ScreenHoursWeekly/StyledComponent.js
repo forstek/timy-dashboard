@@ -29,7 +29,7 @@ const Menu = styled.p`
     }
 `
 
-const Title = styled.p`
+const Title = styled.div`
     grid-area: title-year;
 
     font-family: Roboto;
@@ -59,7 +59,7 @@ const DailyLink = styled.a`
     line-height: 14px;
     text-decoration: none;
 
-    margin-top: 30px;
+    // margin-top: 30px;
 
     /* identical to box height, or 100% */
 
@@ -71,6 +71,7 @@ const Chart = styled.div`
 
     width: 100%;
     height: 305px;
+    margin-top: 30px;
 
     background: #C4C4C4;
 `

@@ -29,7 +29,7 @@ const Menu = styled.p`
     }
 `
 
-const Title = styled.p`
+const Title = styled.div`
     grid-area: title-date;
 
     font-family: Roboto;
@@ -59,7 +59,7 @@ const WeeklyLink = styled.a`
     line-height: 14px;
     text-decoration: none;
 
-    margin-top: 30px;
+    // margin-top: 30px;
 
     /* identical to box height, or 100% */
 

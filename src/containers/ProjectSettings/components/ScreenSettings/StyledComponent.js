@@ -9,8 +9,6 @@ const ScreenSettingsGrid = styled.div`
         'project-owner-label project-owner'
         'project-admins-label project-admins'
         'delete-button delete-button';
-    // grid-column-gap: 10px;
-    // grid-row-gap: 3px;
     width: fit-content;
     padding: 20px 50px 25px;
     margin-top: 60px;

@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
 import Sidenav from './components/Sidenav'
 import ScreenHoursDaily from './components/ScreenHoursDaily'
+import { VersionBox } from 'components/VersionBox/StyledComponent'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
 import AddIcon from 'assets/images/add-icon-white.png'
@@ -29,6 +30,9 @@ class HoursDaily extends PureComponent {
         <ScreenHoursDaily
           membersName='Iqbal Novramadani'
         />
+        <VersionBox>
+            1.0
+        </VersionBox>
       </div>
     )
   }

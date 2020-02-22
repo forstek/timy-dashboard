@@ -20,28 +20,14 @@ const Logo = styled.img`
     top: 12px;
 `
 
-const Add = styled.button`
+const Add = styled.div`
     position: fixed;
 
     width: 40px;
     height: 40px;
-    top: 10px;
-    right: 75px;
-
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
+    top: 0;
+    right: 90px;
     padding: 10px;
-    color: white;
-
-    :focus {
-        outline: none;
-    }
-
-    :active {
-        box-shadow: 0 0 2px 0 #00823F;
-        top: 9px;
-    }
 `
 
 const ButtonIcon = styled.img`
@@ -49,27 +35,15 @@ const ButtonIcon = styled.img`
     height: 20px;
 `
 
-const Profile = styled.button`
+const Profile = styled.div`
     position: fixed;
     
     width: 40x;
     height: 40px;    
-    top: 10px;
+    top: 0;
     right: 25px;
-
-    border: none;
-    border-radius: 50%;
-    background: #C4C4C4;
     padding: 10px;
 
-    :focus {
-        outline: none;
-    }
-
-    :active {
-        box-shadow: 0 0 2px 0 #00823F;
-        top: 9px;
-    }
 `
 
 const Tooltip = styled.div`
@@ -89,7 +63,7 @@ const Tooltip = styled.div`
         position: fixed;
         z-index: 1;
         top: 20px;
-        right: 120px;
+        right: 130px;
 
         font-family: Roboto;
         font-style: normal;

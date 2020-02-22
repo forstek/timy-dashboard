@@ -3,7 +3,6 @@ import Toolbar from 'components/Toolbar'
 import Sidenav from './components/Sidenav'
 // import ScreenNoProject from './components/ScreenNoProject'
 import ScreenDashboard from './components/ScreenDashboard'
-import { VersionBox } from 'components/VersionBox/StyledComponent'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
 import AddIcon from 'assets/images/add-icon-white.png'
@@ -43,9 +42,6 @@ class Homepage extends PureComponent {
           members={MEMBERS}
           categories={CATEGORIES}
         />
-        <VersionBox>
-            1.0
-        </VersionBox>
       </div>
     )
   }

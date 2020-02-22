@@ -1,25 +1,32 @@
-import React from 'react'
-import { pure } from 'recompose'
+import React, { Component } from 'react'
 import Styled from './StyledComponent'
 
-const ForstekFooter = () => (
-  <Styled.ForstekFooter>
-    Made with &nbsp; 
-      <span 
-        role='img'
-        aria-label='love'
-      >
-        &#129505;
-      </span>
-      &nbsp; by &nbsp;
-    <a
-      href='https://www.forstek.co/'
-    >
-      <Styled.Forstek>
-        Forstek
-      </Styled.Forstek>
-    </a>
-  </Styled.ForstekFooter>
-)
-
-export default pure(ForstekFooter)
+export default class ForstekFooter extends Component {
+  render () {
+    return (
+      <Styled.ForstekFooter>
+                Made with &nbsp;
+        <Styled.Heart>
+          <svg viewBox='0 0 32 29.6'>
+            <path
+              d='M23.6,0c-3.4,0-6.3,
+                            2.7-7.6,5.6C14.7,2.7,11.8,
+                            0,8.4,0C3.8,0,0,3.8,0,8.4c0,
+                            9.4,9.5,11.9,16,21.2 c6.1-9.3,
+                            16-12.1,16-21.2C32,3.8,28.2,0,
+                            23.6,0z'
+            />
+          </svg>
+        </Styled.Heart>
+                &nbsp; by &nbsp;
+        <a
+          href='https://www.forstek.co/'
+        >
+          <Styled.Forstek>
+              Forstek
+          </Styled.Forstek>
+        </a>
+      </Styled.ForstekFooter>
+    )
+  }
+}

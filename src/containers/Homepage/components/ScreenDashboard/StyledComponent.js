@@ -55,6 +55,7 @@ const Chart = styled.div`
 const Members = styled.div`
     grid-area: members;
     margin-top: 80px;
+    margin-bottom: 20px;
 
     font-family: Roboto;
     font-style: normal;
@@ -69,6 +70,7 @@ const Members = styled.div`
 const Categories = styled.div`
     grid-area: categories;
     margin-top: 80px;
+    margin-bottom: 20px;
 
     font-family: Roboto;
     font-style: normal;
@@ -111,25 +113,11 @@ const CategoryList = styled.p`
     color: #000000;
 `
 
-const Add = styled.button`
+const Add = styled.div`
     width: 25px;
     height: 25px;
     margin-left: 120px;
-
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
     padding: 5px;
-    color: white;
-
-    :focus {
-        outline: none;
-    }
-
-    :active {
-        box-shadow: 0 0 2px 0 #FC6F20;
-        top: 9px;
-    }
 `
 
 const AddIcon = styled.img`

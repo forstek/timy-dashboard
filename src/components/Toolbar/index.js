@@ -1,11 +1,16 @@
 import React from 'react'
 import { pure } from 'recompose'
+
+import { 
+  Button, 
+  Avatar 
+} from 'antd'
+
 import Styled from './StyledComponent'
 
 const Toolbar = (props) => {
   const {
     logo,
-    buttonImg,
     profileImg,
     handleAdd,
     handleProfile
@@ -18,19 +23,31 @@ const Toolbar = (props) => {
       />
       <Styled.Tooltip>
         <span>Create new project</span>
-        <Styled.Add
-          onClick={handleAdd}
-        >
-          <Styled.ButtonIcon
-            src={buttonImg}
+        <Styled.Add>
+          <Button
+            type='primary'
+            shape='circle'
+            icon='plus'
+            size='large'
+            onClick={handleAdd}
+            style={{
+              background: '#FC6F20',
+              border: 'none',
+            }}
           />
         </Styled.Add>
       </Styled.Tooltip>
-      <Styled.Profile
-        onClick={handleProfile}
-      >
-        <Styled.ButtonIcon
-          src={profileImg}
+      <Styled.Profile>
+        <Avatar
+          shape='circle'
+          src={profileImg? profileImg : ''}
+          icon={profileImg? '' : 'user'}
+          size='large'
+          onClick={handleProfile}
+          style={{
+            background: '#C4C4C4',
+            color:'#000000'
+          }}
         />
       </Styled.Profile>
     </Styled.Toolbar>

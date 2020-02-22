@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react'
-import Styled from './StyledComponent'
+import { Button } from 'antd'
 
-import AddIcon from 'assets/images/add-icon-black.png'
-// import DeleteIcon from 'assets/images/delete-icon-black.png'
+import Styled from './StyledComponent'
 
 export default class ScreenDashboard extends PureComponent {
   render () {
@@ -29,11 +28,18 @@ export default class ScreenDashboard extends PureComponent {
                   Members
           <Styled.Tooltip>
             <span>Add new member</span>
-            <Styled.Add
-              onClick={onMembersAdd}
-            >
-              <Styled.AddIcon
-                src={AddIcon}
+            <Styled.Add>
+              <Button
+                type='primary'
+                shape='circle'
+                icon='plus'
+                size='large'
+                onClick={onMembersAdd}
+                style={{
+                  background: '#FFFFFF',
+                  border: 'none',
+                  color: '#000000'
+                }}
               />
             </Styled.Add>
           </Styled.Tooltip>
@@ -42,11 +48,18 @@ export default class ScreenDashboard extends PureComponent {
                   Categories
           <Styled.Tooltip>
             <span>Add new category</span>
-            <Styled.Add
-              onClick={onCategoriesAdd}
-            >
-              <Styled.AddIcon
-                src={AddIcon}
+            <Styled.Add>
+              <Button
+                type='primary'
+                shape='circle'
+                icon='plus'
+                size='large'
+                onClick={onCategoriesAdd}
+                style={{
+                  background: '#FFFFFF',
+                  border: 'none',
+                  color: '#000000'
+                }}
               />
             </Styled.Add>
           </Styled.Tooltip>

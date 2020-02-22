@@ -5,8 +5,6 @@ import ScreenHoursWeekly from './components/ScreenHoursWeekly'
 import { VersionBox } from 'components/VersionBox/StyledComponent'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
-import AddIcon from 'assets/images/add-icon-white.png'
-import UserIcon from 'assets/images/user-icon.png'
 
 class HoursWeekly extends PureComponent {
   render () {
@@ -21,8 +19,6 @@ class HoursWeekly extends PureComponent {
       <div>
         <Toolbar
           logo={TimyLogo}
-          buttonImg={AddIcon}
-          profileImg={UserIcon}
         />
         <Sidenav
           projects={PROJECTS}

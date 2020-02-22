@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
 import Sidenav from './components/Sidenav'
 import ScreenSettings from './components/ScreenSettings'
+import { VersionBox } from 'components/VersionBox/StyledComponent'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
 import AddIcon from 'assets/images/add-icon-white.png'
@@ -36,6 +37,9 @@ class ProjectSettings extends PureComponent {
           projectOwner='Iqbal Novramadani'
           projectAdmins={PROJECT_ADMINS}
         />
+        <VersionBox>
+          1.0
+        </VersionBox>
       </div>
     )
   }

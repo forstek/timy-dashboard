@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
-import Sidenav from './components/Sidenav'
+import Sidenav from 'components/Sidenav'
 import ScreenSettings from './components/ScreenSettings'
 import { VersionBox } from 'components/VersionBox/StyledComponent'
 

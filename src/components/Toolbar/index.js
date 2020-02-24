@@ -1,9 +1,9 @@
 import React from 'react'
 import { pure } from 'recompose'
 
-import { 
-  Button, 
-  Avatar 
+import {
+  Button,
+  Avatar
 } from 'antd'
 
 import Styled from './StyledComponent'
@@ -32,7 +32,7 @@ const Toolbar = (props) => {
             onClick={handleAdd}
             style={{
               background: '#FC6F20',
-              border: 'none',
+              border: 'none'
             }}
           />
         </Styled.Add>
@@ -40,13 +40,13 @@ const Toolbar = (props) => {
       <Styled.Profile>
         <Avatar
           shape='circle'
-          src={profileImg? profileImg : ''}
-          icon={profileImg? '' : 'user'}
+          src={profileImg || ''}
+          icon={profileImg ? '' : 'user'}
           size='large'
           onClick={handleProfile}
           style={{
             background: '#C4C4C4',
-            color:'#000000'
+            color: '#000000'
           }}
         />
       </Styled.Profile>

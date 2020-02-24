@@ -4,13 +4,13 @@ import Styled from './StyledComponent'
 
 const ForstekFooter = () => (
   <Styled.ForstekFooter>
-    Made with &nbsp; 
-      <span 
-        role='img'
-        aria-label='love'
-      >
+    Made with &nbsp;
+    <span
+      role='img'
+      aria-label='love'
+    >
         &#129505;
-      </span>
+    </span>
       &nbsp; by &nbsp;
     <a
       href='https://www.forstek.co/'

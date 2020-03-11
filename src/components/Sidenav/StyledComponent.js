@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Sidenav = styled.div`
+export const Sidenav = styled.div`
     position: fixed;
     height: 100vh;
     width: 320px;
@@ -14,7 +14,7 @@ const Sidenav = styled.div`
     overflow-y: auto;
 `
 
-const Navmenu = styled.a`
+export const Navmenu = styled.a`
     background: #F8F8F8;
     box-shadow: 0px 1px 0px #E0D7D7;
     border-bottom: 1px solid #E0D7D7;
@@ -36,8 +36,3 @@ const Navmenu = styled.a`
         background:  #FFC3A2
     }
 `
-
-export default {
-  Sidenav,
-  Navmenu
-}

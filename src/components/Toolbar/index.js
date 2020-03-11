@@ -6,7 +6,7 @@ import {
   Avatar
 } from 'antd'
 
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 const Toolbar = (props) => {
   const {
@@ -17,13 +17,13 @@ const Toolbar = (props) => {
   } = props
 
   return (
-    <Styled.Toolbar>
-      <Styled.Logo
+    <s.Toolbar>
+      <s.Logo
         src={logo}
       />
-      <Styled.Tooltip>
+      <s.Tooltip>
         <span>Create new project</span>
-        <Styled.Add>
+        <s.Add>
           <Button
             type='primary'
             shape='circle'
@@ -35,9 +35,9 @@ const Toolbar = (props) => {
               border: 'none'
             }}
           />
-        </Styled.Add>
-      </Styled.Tooltip>
-      <Styled.Profile>
+        </s.Add>
+      </s.Tooltip>
+      <s.Profile>
         <Avatar
           shape='circle'
           src={profileImg || ''}
@@ -49,8 +49,8 @@ const Toolbar = (props) => {
             color: '#000000'
           }}
         />
-      </Styled.Profile>
-    </Styled.Toolbar>
+      </s.Profile>
+    </s.Toolbar>
   )
 }
 

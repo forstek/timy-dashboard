@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 export default class ScreenSettings extends PureComponent {
   render () {
@@ -12,48 +12,48 @@ export default class ScreenSettings extends PureComponent {
     } = this.props
 
     return (
-      <Styled.ScreenSettingsGrid>
-        <Styled.Menu>
+      <s.ScreenSettingsGrid>
+        <s.Menu>
           <a href='/home'>Dashboard</a>
           <a href='/settings'>Settings</a>
-        </Styled.Menu>
-        <Styled.Title>
+        </s.Menu>
+        <s.Title>
                   Project settings
-        </Styled.Title>
-        <Styled.ProjectNameLabel>
+        </s.Title>
+        <s.ProjectNameLabel>
                   Project name
-        </Styled.ProjectNameLabel>
-        <Styled.ProjectName
+        </s.ProjectNameLabel>
+        <s.ProjectName
           type='text'
           name='projectName'
           value={projectName}
           onChange={onChangeProjectName}
         />
-        <Styled.ProjectOwnerLabel>
+        <s.ProjectOwnerLabel>
                     Owner
-        </Styled.ProjectOwnerLabel>
-        <Styled.ProjectOwner>
+        </s.ProjectOwnerLabel>
+        <s.ProjectOwner>
           {projectOwner}
-        </Styled.ProjectOwner>
-        <Styled.ProjectAdminsLabel>
+        </s.ProjectOwner>
+        <s.ProjectAdminsLabel>
                     Admins
-        </Styled.ProjectAdminsLabel>
+        </s.ProjectAdminsLabel>
         <div>
           {projectAdmins.map(({
             label,
             name
           }) => (
-            <Styled.ProjectAdmins key={name}>
+            <s.ProjectAdmins key={name}>
               {label}
-            </Styled.ProjectAdmins>
+            </s.ProjectAdmins>
           ))}
         </div>
-        <Styled.DeleteButton
+        <s.DeleteButton
           onClick={onDeleteProject}
         >
                     Delete project
-        </Styled.DeleteButton>
-      </Styled.ScreenSettingsGrid>
+        </s.DeleteButton>
+      </s.ScreenSettingsGrid>
     )
   }
 }

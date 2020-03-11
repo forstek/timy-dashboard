@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 export default class ScreenScreenshot extends PureComponent {
   render () {
@@ -8,12 +8,12 @@ export default class ScreenScreenshot extends PureComponent {
     } = this.props
 
     return (
-      <Styled.ScreenScreenshotGrid>
-        <Styled.Hours>
+      <s.ScreenScreenshotGrid>
+        <s.Hours>
           {hours}
-        </Styled.Hours>
-        <Styled.Screenshot />
-      </Styled.ScreenScreenshotGrid>
+        </s.Hours>
+        <s.Screenshot />
+      </s.ScreenScreenshotGrid>
     )
   }
 }

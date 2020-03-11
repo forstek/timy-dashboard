@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const Form = styled.div`
+export const Form = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 `
 
-const FormHeader = styled.div`
+export const FormHeader = styled.div`
     display: grid;
 
     justify-items: center;
@@ -22,7 +22,7 @@ const FormHeader = styled.div`
     color: #807777;
 `
 
-const FormBody = styled.form`
+export const FormBody = styled.form`
     display: grid;
     grid-row-gap: 16px;
 
@@ -31,7 +31,7 @@ const FormBody = styled.form`
     justify-items: center;
 `
 
-const FormFooter = styled.div`
+export const FormFooter = styled.div`
     display: grid;
     grid-row-gap: 24px;
 
@@ -47,10 +47,3 @@ const FormFooter = styled.div`
         color: #807777;
     }
 `
-
-export default {
-  Form,
-  FormHeader,
-  FormBody,
-  FormFooter
-}

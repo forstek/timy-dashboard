@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Input = styled.input`
+export const Input = styled.input`
     width: 295px;
     height: 48px;
 
@@ -24,5 +24,3 @@ const Input = styled.input`
         outline: none;
     }
 `
-
-export default { Input }

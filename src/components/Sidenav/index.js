@@ -1,6 +1,6 @@
 import React from 'react'
 import { pure } from 'recompose'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 const Sidenav = (props) => {
   const {
@@ -8,14 +8,14 @@ const Sidenav = (props) => {
   } = props
 
   return (
-    <Styled.Sidenav>
+    <s.Sidenav>
       {projects.map(({
         label,
         name
       }) => (
-        <Styled.Navmenu key={name}> {label} </Styled.Navmenu>
+        <s.Navmenu key={name}> {label} </s.Navmenu>
       ))}
-    </Styled.Sidenav>
+    </s.Sidenav>
   )
 }
 

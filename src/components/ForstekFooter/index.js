@@ -1,9 +1,9 @@
 import React from 'react'
 import { pure } from 'recompose'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 const ForstekFooter = () => (
-  <Styled.ForstekFooter>
+  <s.ForstekFooter>
     Made with &nbsp;
     <span
       role='img'
@@ -15,11 +15,11 @@ const ForstekFooter = () => (
     <a
       href='https://www.forstek.co/'
     >
-      <Styled.Forstek>
+      <s.Forstek>
         Forstek
-      </Styled.Forstek>
+      </s.Forstek>
     </a>
-  </Styled.ForstekFooter>
+  </s.ForstekFooter>
 )
 
 export default pure(ForstekFooter)

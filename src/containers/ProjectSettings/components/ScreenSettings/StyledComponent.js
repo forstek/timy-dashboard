@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ScreenSettingsGrid = styled.div`
+export const ScreenSettingsGrid = styled.div`
     display: grid;
     grid-template-areas:
         'menu menu'
@@ -15,7 +15,7 @@ const ScreenSettingsGrid = styled.div`
     margin-left: 320px;
 `
 
-const Menu = styled.p`
+export const Menu = styled.p`
     grid-area: menu;
 
     font-family: Roboto;
@@ -32,7 +32,7 @@ const Menu = styled.p`
     }
 `
 
-const Title = styled.p`
+export const Title = styled.p`
     grid-area: title;
 
     font-family: Roboto;
@@ -44,7 +44,7 @@ const Title = styled.p`
 
     color: #000000;
 `
-const ProjectNameLabel = styled.p`
+export const ProjectNameLabel = styled.p`
     grid-area: project-name-label;
     width: 150px;
 
@@ -58,7 +58,7 @@ const ProjectNameLabel = styled.p`
     color: #000000;
 `
 
-const ProjectName = styled.input`
+export const ProjectName = styled.input`
     grid-area: project-name;
     width: 226px;
     height: 35px;
@@ -78,7 +78,7 @@ const ProjectName = styled.input`
     color: #000000;
 `
 
-const ProjectOwnerLabel = styled.p`
+export const ProjectOwnerLabel = styled.p`
     grid-area: project-owner-label;
     width: 150px;
 
@@ -92,7 +92,7 @@ const ProjectOwnerLabel = styled.p`
     color: #000000;
 `
 
-const ProjectOwner = styled.p`
+export const ProjectOwner = styled.p`
     grid-area: project-owner;
 
     font-family: Roboto;
@@ -105,7 +105,7 @@ const ProjectOwner = styled.p`
     color: #000000;
 `
 
-const ProjectAdminsLabel = styled.p`
+export const ProjectAdminsLabel = styled.p`
     grid-area: project-admins-label;
     width: 150px;
 
@@ -119,7 +119,7 @@ const ProjectAdminsLabel = styled.p`
     color: #000000;
 `
 
-const ProjectAdmins = styled.p`
+export const ProjectAdmins = styled.p`
     grid-area: project-admins;
 
     font-family: Roboto;
@@ -132,7 +132,7 @@ const ProjectAdmins = styled.p`
     color: #000000;
 `
 
-const DeleteButton = styled.button`
+export const DeleteButton = styled.button`
     grid-area: delete-button;
 
     width: 136px;
@@ -162,16 +162,3 @@ const DeleteButton = styled.button`
         top: 9px;
     }
 `
-
-export default {
-  ScreenSettingsGrid,
-  Menu,
-  Title,
-  ProjectNameLabel,
-  ProjectName,
-  ProjectOwnerLabel,
-  ProjectOwner,
-  ProjectAdminsLabel,
-  ProjectAdmins,
-  DeleteButton
-}

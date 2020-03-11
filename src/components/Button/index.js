@@ -1,6 +1,6 @@
 import React from 'react'
 import { pure } from 'recompose'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 const Button = (props) => {
   const {
@@ -14,18 +14,18 @@ const Button = (props) => {
   } = props
 
   return (
-    <Styled.Button
+    <s.Button
       type={type}
       name={name}
       value={value}
       background={background}
       color={color}
     >
-      <Styled.Icon
+      <s.Icon
         src={src}
       />
       {text}
-    </Styled.Button>
+    </s.Button>
   )
 }
 

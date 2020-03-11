@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const screen = styled.div`
+export const screen = styled.div`
     position: absolute;
 
     width: 100%;
@@ -14,7 +14,7 @@ const screen = styled.div`
     text-align: center;
 `
 
-const welcomeText1 = styled.p`
+export const welcomeText1 = styled.p`
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -25,12 +25,12 @@ const welcomeText1 = styled.p`
     color: #000000;
 `
 
-const emoji = styled.img`
+export const emoji = styled.img`
     margin-top: 40px;
     margin-bottom: 14px;
 `
 
-const welcomeText2 = styled.p`
+export const welcomeText2 = styled.p`
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +44,7 @@ const welcomeText2 = styled.p`
     color: #000000;
 `
 
-const Button = styled.button`
+export const Button = styled.button`
     background: #FC6F20;
     border-radius: 4px;
 
@@ -64,11 +64,3 @@ const Button = styled.button`
         outline: none;
     }
 `
-
-export default {
-  screen,
-  welcomeText1,
-  emoji,
-  welcomeText2,
-  Button
-}

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Button } from 'antd'
 
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 export default class ScreenDashboard extends PureComponent {
   render () {
@@ -15,20 +15,20 @@ export default class ScreenDashboard extends PureComponent {
     } = this.props
 
     return (
-      <Styled.ScreenDashboardGrid>
-        <Styled.Menu>
+      <s.ScreenDashboardGrid>
+        <s.Menu>
           <a href='/home'>Dashboard</a>
           <a href='/settings'>Settings</a>
-        </Styled.Menu>
-        <Styled.Title>
+        </s.Menu>
+        <s.Title>
           {projectTitle} - Dashboard
-        </Styled.Title>
-        <Styled.Chart />
-        <Styled.Members>
+        </s.Title>
+        <s.Chart />
+        <s.Members>
                   Members
-          <Styled.Tooltip>
+          <s.Tooltip>
             <span>Add new member</span>
-            <Styled.Add>
+            <s.Add>
               <Button
                 type='primary'
                 shape='circle'
@@ -41,14 +41,14 @@ export default class ScreenDashboard extends PureComponent {
                   color: '#000000'
                 }}
               />
-            </Styled.Add>
-          </Styled.Tooltip>
-        </Styled.Members>
-        <Styled.Categories>
+            </s.Add>
+          </s.Tooltip>
+        </s.Members>
+        <s.Categories>
                   Categories
-          <Styled.Tooltip>
+          <s.Tooltip>
             <span>Add new category</span>
-            <Styled.Add>
+            <s.Add>
               <Button
                 type='primary'
                 shape='circle'
@@ -61,17 +61,17 @@ export default class ScreenDashboard extends PureComponent {
                   color: '#000000'
                 }}
               />
-            </Styled.Add>
-          </Styled.Tooltip>
-        </Styled.Categories>
+            </s.Add>
+          </s.Tooltip>
+        </s.Categories>
         <div>
           {members.map(({
             label,
             name
           }) => (
-            <Styled.MemberList key={name}>
+            <s.MemberList key={name}>
               {label}
-            </Styled.MemberList>
+            </s.MemberList>
           ))}
         </div>
         <div>
@@ -79,12 +79,12 @@ export default class ScreenDashboard extends PureComponent {
             label,
             name
           }) => (
-            <Styled.CategoryList key={name}>
+            <s.CategoryList key={name}>
               {label}
-            </Styled.CategoryList>
+            </s.CategoryList>
           ))}
         </div>
-      </Styled.ScreenDashboardGrid>
+      </s.ScreenDashboardGrid>
     )
   }
 }

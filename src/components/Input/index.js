@@ -1,6 +1,6 @@
 import React from 'react'
 import { pure } from 'recompose'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 const Input = (props) => {
   const {
@@ -12,7 +12,7 @@ const Input = (props) => {
   } = props
 
   return (
-    <Styled.Input
+    <s.Input
       type={type}
       name={name}
       value={value}

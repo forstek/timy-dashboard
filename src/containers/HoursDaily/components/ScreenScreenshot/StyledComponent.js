@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ScreenScreenshotGrid = styled.div`
+export const ScreenScreenshotGrid = styled.div`
     display: grid;
     grid-template-areas:
         'hours screenshot';
@@ -9,7 +9,7 @@ const ScreenScreenshotGrid = styled.div`
     grid-gap: 50px;
 `
 
-const Hours = styled.p`
+export const Hours = styled.p`
     grid-area: hours;
 
     font-family: Roboto;
@@ -22,7 +22,7 @@ const Hours = styled.p`
     color: #000000;
 `
 
-const Screenshot = styled.div`
+export const Screenshot = styled.div`
     grid-area: screenshot;
 
     width: 115px;
@@ -30,9 +30,3 @@ const Screenshot = styled.div`
 
     background: #C4C4C4;
 `
-
-export default {
-  ScreenScreenshotGrid,
-  Hours,
-  Screenshot
-}

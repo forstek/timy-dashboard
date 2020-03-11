@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ScreenDashboardGrid = styled.div`
+export const ScreenDashboardGrid = styled.div`
     display: grid;
     grid-template-areas:
         'menu menu'
@@ -14,7 +14,7 @@ const ScreenDashboardGrid = styled.div`
     margin-left: 320px;
 `
 
-const Menu = styled.p`
+export const Menu = styled.p`
     grid-area: menu;
 
     font-family: Roboto;
@@ -31,7 +31,7 @@ const Menu = styled.p`
     }
 `
 
-const Title = styled.p`
+export const Title = styled.p`
     grid-area: title;
 
     font-family: Roboto;
@@ -44,7 +44,7 @@ const Title = styled.p`
     color: #000000;
 `
 
-const Chart = styled.div`
+export const Chart = styled.div`
     grid-area: chart;
 
     width: 100%;
@@ -52,7 +52,7 @@ const Chart = styled.div`
     background: #F0F0F0;
 `
 
-const Members = styled.div`
+export const Members = styled.div`
     grid-area: members;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -67,7 +67,7 @@ const Members = styled.div`
     color: #000000;
 `
 
-const Categories = styled.div`
+export const Categories = styled.div`
     grid-area: categories;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -82,7 +82,7 @@ const Categories = styled.div`
     color: #000000;
 `
 
-const MemberList = styled.p`
+export const MemberList = styled.p`
     grid-area: member-list;
 
     font-family: Roboto;
@@ -99,7 +99,7 @@ const MemberList = styled.p`
     };
 `
 
-const CategoryList = styled.p`
+export const CategoryList = styled.p`
     grid-area: category-list;
     // display: inline-block;
 
@@ -113,19 +113,19 @@ const CategoryList = styled.p`
     color: #000000;
 `
 
-const Add = styled.div`
+export const Add = styled.div`
     width: 25px;
     height: 25px;
     margin-left: 120px;
     padding: 5px;
 `
 
-const AddIcon = styled.img`
+export const AddIcon = styled.img`
     width: 15px;
     height: 15px;
 `
 
-const Delete = styled.button`
+export const Delete = styled.button`
     width: 15px;
     height: 15px;
     margin-left: 15px;
@@ -153,12 +153,12 @@ const Delete = styled.button`
     }
 `
 
-const DeleteIcon = styled.img`
+export const DeleteIcon = styled.img`
     width: 6px;
     height: 6px;
 `
 
-const Tooltip = styled.div`
+export const Tooltip = styled.div`
     position: relative;
     display: inline-block;
 
@@ -189,19 +189,3 @@ const Tooltip = styled.div`
         visibility: visible;
     }
 `
-
-export default {
-  ScreenDashboardGrid,
-  Menu,
-  Title,
-  Chart,
-  Members,
-  Categories,
-  MemberList,
-  CategoryList,
-  Add,
-  AddIcon,
-  Delete,
-  DeleteIcon,
-  Tooltip
-}

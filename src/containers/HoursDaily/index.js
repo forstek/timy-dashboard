@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
-import Sidenav from './components/Sidenav'
+import Sidenav from 'components/Sidenav'
 import ScreenHoursDaily from './components/ScreenHoursDaily'
 import { VersionBox } from 'components/VersionBox/StyledComponent'
 

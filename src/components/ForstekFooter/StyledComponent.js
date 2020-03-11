@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Forstek = styled.p`
+export const Forstek = styled.p`
     color: #FC6F20 !important;
 
     display: inline-block;
@@ -10,7 +10,7 @@ const Forstek = styled.p`
     font-weight: normal;
 `
 
-const ForstekFooter = styled.div`
+export const ForstekFooter = styled.div`
     width: 153px;
     height: 14px;
 
@@ -31,8 +31,3 @@ const ForstekFooter = styled.div`
 
     color: #807777;
 `
-
-export default {
-  Forstek,
-  ForstekFooter
-}

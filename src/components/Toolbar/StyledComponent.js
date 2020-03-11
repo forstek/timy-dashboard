@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Toolbar = styled.div`
+export const Toolbar = styled.div`
     position: fixed;
     z-index:1;
 
@@ -12,7 +12,7 @@ const Toolbar = styled.div`
     background: #FC6F20;
 `
 
-const Logo = styled.img`  
+export const Logo = styled.img`  
     position: fixed;
     width: 100px;
     height: 36px;
@@ -20,7 +20,7 @@ const Logo = styled.img`
     top: 12px;
 `
 
-const Add = styled.div`
+export const Add = styled.div`
     position: fixed;
 
     width: 40px;
@@ -30,12 +30,12 @@ const Add = styled.div`
     padding: 10px;
 `
 
-const ButtonIcon = styled.img`
+export const ButtonIcon = styled.img`
     width: 20px;
     height: 20px;
 `
 
-const Profile = styled.div`
+export const Profile = styled.div`
     position: fixed;
     
     width: 40x;
@@ -46,7 +46,7 @@ const Profile = styled.div`
 
 `
 
-const Tooltip = styled.div`
+export const Tooltip = styled.div`
     position: relative;
     display: inline-block;
 
@@ -76,12 +76,3 @@ const Tooltip = styled.div`
         visibility: visible;
     }
 `
-
-export default {
-  Toolbar,
-  Logo,
-  Add,
-  Profile,
-  ButtonIcon,
-  Tooltip
-}

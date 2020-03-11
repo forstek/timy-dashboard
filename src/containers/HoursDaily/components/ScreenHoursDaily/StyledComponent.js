@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ScreenDailyHoursGrid = styled.div`
+export const ScreenDailyHoursGrid = styled.div`
     display: grid;
     grid-template-areas:
         'menu menu'
@@ -12,7 +12,7 @@ const ScreenDailyHoursGrid = styled.div`
     margin-left: 320px;
 `
 
-const Menu = styled.p`
+export const Menu = styled.p`
     grid-area: menu;
 
     font-family: Roboto;
@@ -29,7 +29,7 @@ const Menu = styled.p`
     }
 `
 
-const Title = styled.div`
+export const Title = styled.div`
     grid-area: title-date;
 
     font-family: Roboto;
@@ -42,13 +42,13 @@ const Title = styled.div`
     color: #000000;
 `
 
-const Date = styled.div`
+export const Date = styled.div`
     display: inline-block;
 
     margin-left: 25px;
 `
 
-const WeeklyLink = styled.a`
+export const WeeklyLink = styled.a`
     grid-area: weekly-link;
     text-align: right;
 
@@ -66,15 +66,6 @@ const WeeklyLink = styled.a`
     color: #3E72B0;
 `
 
-const DisplayScreenshot = styled.div`
+export const DisplayScreenshot = styled.div`
     grid-area: screenshot;
 `
-
-export default {
-  ScreenDailyHoursGrid,
-  Menu,
-  Title,
-  Date,
-  WeeklyLink,
-  DisplayScreenshot
-}

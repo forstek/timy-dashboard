@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Styled from './StyledComponent'
+import * as s from './StyledComponent'
 
 export default class ScreenHoursWeekly extends PureComponent {
   render () {
@@ -8,24 +8,24 @@ export default class ScreenHoursWeekly extends PureComponent {
     } = this.props
 
     return (
-      <Styled.ScreenWeeklyHoursGrid>
-        <Styled.Menu>
+      <s.ScreenWeeklyHoursGrid>
+        <s.Menu>
           <a href='/home'>Dashboard</a>
           <a href='/settings'>Settings</a>
-        </Styled.Menu>
-        <Styled.Title>
+        </s.Menu>
+        <s.Title>
           {membersName} weeks
-          <Styled.Year>
+          <s.Year>
                   2019
-          </Styled.Year>
-        </Styled.Title>
-        <Styled.DailyLink
+          </s.Year>
+        </s.Title>
+        <s.DailyLink
           href='/daily'
         >
                   Daily
-        </Styled.DailyLink>
-        <Styled.Chart />
-      </Styled.ScreenWeeklyHoursGrid>
+        </s.DailyLink>
+        <s.Chart />
+      </s.ScreenWeeklyHoursGrid>
     )
   }
 }

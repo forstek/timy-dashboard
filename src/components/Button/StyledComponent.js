@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
+export const Button = styled.button`
     width: 295px;
     height: 60px;
 
@@ -36,13 +36,8 @@ const Button = styled.button`
     }
 `
 
-const Icon = styled.img`
+export const Icon = styled.img`
     width: 27px;
     margin-left: 20px;
     margin-right: 60px;
 `
-
-export default {
-  Button,
-  Icon
-}

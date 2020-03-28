@@ -23,9 +23,8 @@ const Button = (props) => {
       color={color}
       onClick={onClick}
     >
-      { image &&
-        <s.Icon src={image} />
-      }
+      {image &&
+        <s.Icon src={image} />}
       {text}
     </s.Button>
   )

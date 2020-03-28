@@ -44,7 +44,7 @@ export default class Form extends PureComponent {
         <s.FormFooter>
           <Button
             text='Sign up'
-            onClick={() => {console.log('Sign up')}}
+            onClick={() => { console.log('Sign up') }}
           />
           <Link
             to='/login'

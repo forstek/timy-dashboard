@@ -11,7 +11,8 @@ const ForstekFooter = () => (
     >
       🧡
     </span> by&nbsp;
-    <a href='https://www.forstek.co/'
+    <a
+      href='https://www.forstek.co/'
       target='_blank'
       rel='noopener noreferrer'
     >

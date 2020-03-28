@@ -37,14 +37,14 @@ export default class Form extends PureComponent {
         <s.FormFooter>
           <Button
             text='Sign in'
-            onClick={() => {console.log('Sign in email')}}
+            onClick={() => { console.log('Sign in email') }}
           />
           <Button
             text='Sign in'
             image={GoogleLogo}
             background='#FFFFFF'
             color='#707070'
-            onClick={() => {console.log('Sign in google')}}
+            onClick={() => { console.log('Sign in google') }}
           />
           <Link
             to='/'

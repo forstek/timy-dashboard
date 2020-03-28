@@ -14,7 +14,9 @@ import Homepage from 'containers/Homepage'
 import ProjectSettings from 'containers/ProjectSettings'
 import HoursDaily from 'containers/HoursDaily'
 import HoursWeekly from 'containers/HoursWeekly'
+import VersionBox from 'components/VersionBox'
 
+import version from 'constants/version'
 import * as serviceWorker from './serviceWorker'
 
 const routing = (
@@ -27,6 +29,7 @@ const routing = (
       <Route path='/settings' component={ProjectSettings} />
       <Route path='/daily' component={HoursDaily} />
       <Route path='/weekly' component={HoursWeekly} />
+      <VersionBox version={version} />
     </div>
   </Router>
 )

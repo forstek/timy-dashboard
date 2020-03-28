@@ -4,19 +4,19 @@ import * as s from './StyledComponent'
 
 const ForstekFooter = () => (
   <s.ForstekFooter>
-    Made with &nbsp;
+    Made with&nbsp;
     <span
       role='img'
       aria-label='love'
     >
-        &#129505;
-    </span>
-      &nbsp; by &nbsp;
-    <a
-      href='https://www.forstek.co/'
+      🧡
+    </span> by&nbsp;
+    <a href='https://www.forstek.co/'
+      target='_blank'
+      rel='noopener noreferrer'
     >
       <s.Forstek>
-        Forstek
+        forstek
       </s.Forstek>
     </a>
   </s.ForstekFooter>

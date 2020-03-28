@@ -18,18 +18,19 @@ export default class Form extends PureComponent {
             alt='Timy-logo'
           />
           <p>
-                        Remote working<br />
-                        time tracker
+            Remote work
+            <br />
+            time tracker
           </p>
         </s.FormHeader>
         <s.FormBody>
           <Input
             type='text'
-            placeholder='Email'
+            placeholder='Name'
           />
           <Input
-            type='text'
-            placeholder='Name'
+            type='email'
+            placeholder='Email'
           />
           <Input
             type='password'
@@ -43,6 +44,7 @@ export default class Form extends PureComponent {
         <s.FormFooter>
           <Button
             text='Sign up'
+            onClick={() => {console.log('Sign up')}}
           />
           <Link
             to='/login'

@@ -19,8 +19,9 @@ export default class Form extends PureComponent {
             alt='Timy-logo'
           />
           <p>
-                        Remote working<br />
-                        time tracker
+            Remote work
+            <br />
+            time tracker
           </p>
         </s.FormHeader>
         <s.FormBody>
@@ -36,22 +37,24 @@ export default class Form extends PureComponent {
         <s.FormFooter>
           <Button
             text='Sign in'
+            onClick={() => {console.log('Sign in email')}}
           />
           <Button
             text='Sign in'
-            src={GoogleLogo}
+            image={GoogleLogo}
             background='#FFFFFF'
             color='#707070'
+            onClick={() => {console.log('Sign in google')}}
           />
           <Link
             to='/'
           >
-                        Forgot password?
+            Forgot password?
           </Link>
           <Link
             to='/register'
           >
-                        Don't have an account?
+            Don't have an account?
           </Link>
         </s.FormFooter>
         <ForstekFooter />

@@ -7,18 +7,17 @@ export const Input = styled.input`
     background: #FFFFFF;
     border: 1px solid #FC6F20;
     border-radius: 24px;
-    box-sizing: border-box;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 40px;
-    /* identical to box height, or 222% */
+
     display: flex;
     align-items: center;
 
-    padding: 20px;
+    padding: 4px 20px;
 
     :focus {
         outline: none;

@@ -9,8 +9,9 @@ const Button = (props) => {
     value,
     background,
     color,
-    src,
-    text
+    image,
+    text,
+    onClick
   } = props
 
   return (
@@ -20,10 +21,11 @@ const Button = (props) => {
       value={value}
       background={background}
       color={color}
+      onClick={onClick}
     >
-      <s.Icon
-        src={src}
-      />
+      { image &&
+        <s.Icon src={image} />
+      }
       {text}
     </s.Button>
   )

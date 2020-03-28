@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import Toolbar from 'components/Toolbar'
 import Sidenav from 'components/Sidenav'
 import ScreenHoursWeekly from './components/ScreenHoursWeekly'
-import { VersionBox } from 'components/VersionBox/StyledComponent'
 
 import TimyLogo from 'assets/images/timy-logo-white.png'
 
@@ -26,9 +25,6 @@ class HoursWeekly extends PureComponent {
         <ScreenHoursWeekly
           membersName='Iqbal Novramadani'
         />
-        <VersionBox>
-            1.0
-        </VersionBox>
       </div>
     )
   }

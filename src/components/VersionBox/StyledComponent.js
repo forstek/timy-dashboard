@@ -8,6 +8,6 @@ export const VersionBox = styled.div`
   height: 25px;
   opacity: 0.6;
   padding: 4px 8px;
-  position: absolute;
+  position: fixed;
   z-index: 9999999;
 `
